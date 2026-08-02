@@ -26,7 +26,8 @@
 
 <body class="bg-dark">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">Wendy A. Geronimo</a>
+		<a class="navbar-brand" href="#" style="color: #1a75ff;">Wendy A. Geronimo</a>
+
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
@@ -55,10 +56,13 @@
 				<a class="dropdown-item" href="https://github.com/bensnider/psy341k_final_project/tree/main">User sentiment evolution: ChatGPT app reviews</a>
 				<a class="dropdown-item" href="https://github.com/waze98/MLDS">Introduction to R Programming Guide</a>
 			  </div>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#contact">Contact</a>
+		    </li>
+		    <li class="nav-item">
+				<a class="nav-link" href="#career-journey">Career Journey</a>
 			  </li>
+            </li>
+			<li class="nav-item">
+			    <a class="nav-link" href="#contact">Contact</a>
 		  </ul>
 		</div>
 	  </nav>
@@ -70,10 +74,10 @@
 			<div class="card-body">
 				<img src="img/waze98/waze98.github.io/headshot.png" class="rounded-circle" alt="Headshot of Wendy A. Geronimo" style="padding-bottom: 20px;padding-top: 20px;max-width: 200px;">
 				
-			  <h5 class="card-title">I am Wendy.</h5>
+			  <h5 class="card-title" style="color: #1a75ff;">Hello world, I'm Wendy!</h5>
 			  <p class="card-text">Aspiring Data Scientist and Researcher.</p>
 			  <a href="https://linkedin.com/in/wgero" class="btn btn-primary">LinkedIn</a>
-			  <a href="Resume_Wendy_Geronimo.pdf" class="btn btn-primary">View Resume</a>
+			  <a href="Wendy_Geronimo_Resume.pdf" class="btn btn-primary">View Resume</a>
 			  <a href="mailto:waze7278@gmail.com" class="btn btn-primary">Email Me</a>
 			</div>
 			<div class="card-footer text-muted">
@@ -85,18 +89,507 @@
 		<div class="text-center" id="about-me">
 			<h1>About Me</h1>
 			<h1 class="spacer textCenter">___</h1>
-			<p>Hello! I’m Wendy Geronimo, a first-generation student at the University of Texas at Austin majoring in Behavioral and Social Data Science. My academic background blends psychology with data science, providing me with a unique skill set in data analysis, machine learning, and human-centered insights. I’m passionate about exploring the drivers behind human behavior and using data to uncover patterns that lead to better decision-making.</p>
+			<p>Hello! I'm Wendy Geronimo, a first‑generation graduate from the University of Texas at Austin and part of the pioneering class of the Behavioral and Social Data Science major. I began in Psychology but pivoted to Data Science after an intro statistics course in R sparked my interest in how computational methods can quantify human behavior. Since then, I've developed a unique skill set in data analysis, machine learning, and human‑centered insights. I'm passionate about using data to uncover meaningful behavioral patterns that inform better decision‑making.</p>
 			<section>		
 				<h2 class="textCenter">Education</h2>
 				<h2 class="spacer textCenter">___</h2>
 				<div class="row" style="text-align:center;">
-					<div class="col-xs-12 col-md-4 col-lg-4"><img class="img-responsive seal" style="margin: 0px auto;" src="../img/UT_Seal.png"><div class="major">University of Texas<br>B.S. Behavioral and Social Data Science<br><font style="color:#808080; font-style: italic;">May 2025</font></div></div>
-					<div class="col-xs-12 col-md-4 col-lg-4"><img class="img-responsive seal" style="margin: 0px auto;" src="../img/Laredo_College_Seal.png"><div class="major">Laredo College<br>A.A. General Studies<br><font style="color:#808080; font-style: italic;">May 2021</font></div></div>
-					<div class="col-xs-12 col-md-4 col-lg-4"><img class="img-responsive seal" style="margin: 0px auto;" src="../img/lbj.png"><div class="major">Johnson High School<br>Early College<br><font style="color:#808080; font-style: italic;">May 2021</font></div></div>
-				</div>
+					<div class="col-xs-12 col-md-4 col-lg-4"><img class="img-responsive seal" style="margin: 0px auto;" src="img/UT_Seal.png"><div class="major">University of Texas<br>B.S. Behavioral and Social Data Science<br><font style="color:#808080; font-style: italic;">May 2025</font></div></div>
+					<div class="col-xs-12 col-md-4 col-lg-4"><img class="img-responsive seal" style="margin: 0px auto;" src="img/Laredo_College_Seal.png"><div class="major">Laredo College<br>A.A. General Studies<br><font style="color:#808080; font-style: italic;">May 2021</font></div></div>
+					<div class="col-xs-12 col-md-4 col-lg-4"><img class="img-responsive seal" style="margin: 0px auto;" src="img/lbj.png"><div class="major">Johnson High School<br>Early College<br><font style="color:#808080; font-style: italic;">May 2021</font></div></div>
+               </div>
+    </section>
+<style>
+    /* Career Journey Section */
+        .career-journey {
+            margin: 80px 0;
+        }
+
+        .timeline {
+            position: relative;
+            margin-top: 40px;
+        }
+
+        .timeline-item {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-bottom: 50px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 30px;
+            transform: translateX(-50%);
+            width: 3px;
+            height: calc(100% + 50px);
+            background: #e0e0e0;
+        }
+
+        .timeline-item:last-child::before {
+            display: none;
+        }
+
+        .timeline-left,
+        .timeline-right {
+            position: relative;
+        }
+
+    /* Text alignment fixes */
+        .timeline-item:nth-child(odd) .timeline-content {
+            text-align: left; /* Text aligned left for left-side cards */
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            text-align: left; /* Text aligned left for right-side cards */
+        }
+
+        .timeline-item:nth-child(7) .timeline-content {
+            margin-left: 40px; /* Adds space between card and timeline circle */
+        }
+
+        .timeline-item.force-left .timeline-content {
+            text-align: left;
+        }   
+     
+        /* Work items (left side) */
+        .timeline-item:nth-child(odd) .timeline-left {
+            text-align: right;
+            padding-right: 40px;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-right {
+            padding-left: 40px;
+        }
+
+        /* Education items (right side) */
+        .timeline-item:nth-child(even) .timeline-left {
+            order: 2;
+            padding-left: 40px;
+        }
+
+        .timeline-item:nth-child(even) .timeline-right {
+            order: 1;
+            text-align: right;
+            padding-right: 40px;
+        }
+
+        /* FORCE ITEM TO PUT CARD ON THE LEFT */
+        .timeline-item.force-left .timeline-left {
+            order: 1 !important;
+            text-align: right !important;
+            padding-right: 40px !important;
+        }
+
+        .timeline-item.force-left .timeline-right {
+            order: 2 !important;
+            padding-left: 40px !important;
+        }
+
+        .timeline-item.force-left .timeline-date-outside {
+            left: calc(50% + 60px) !important;
+            text-align: left !important;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            left: 50%;
+            top: 20px;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2e23ff, #b600ce);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            z-index: 2;
+            box-shadow: 0 0 0 4px #fff, 0 0 12px rgb(255, 251, 0), 0 0 0 6px rgb(166, 0, 255);
+        }
+
+        .timeline-content {
+            background: #f8f8f8;
+            padding: 25px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transform: translateY(-3px);
+        }
+
+        .timeline-role {
+            font-size: 1.3em;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 8px;
+        }
+
+        .timeline-org {
+            color: #9c01fc;
+            font-size: 1.1em;
+            margin-bottom: 5px;
+        }
+
+        .timeline-type {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.85em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .timeline-date {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+
+        .timeline-date-outside {
+            position: absolute;
+            top: 28px;
+            font-size: 1.1em;
+            color: #f8f8f8 !important;
+            font-weight: 600;
+            white-space: nowrap;
+            z-index: 5;
+            /* Button styling like LinkedIn/View Resume/Email buttons */
+            background: linear-gradient(135deg, #1a75ff, #9c01fc);
+            padding: 8px 16px !important;
+            border-radius: 4px !important;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-date-outside {
+            left: calc(50% + 80px);
+            text-align: left;
+        }
+
+        .timeline-item:nth-child(even) .timeline-date-outside {
+            left: calc(50% + 60px);
+            text-align: right;
+        }
+
+    /* Force-left cards = dates on RIGHT */
+        .timeline-item.force-left .timeline-date-outside {
+            left: calc(50% + 80px) !important;
+            right: auto !important;
+            text-align: left !important;
+        }
+
+    /* Icon styling for logos */
+        .timeline-icon img {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+        }
+
+        .timeline-description {
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .timeline-item.force-left .timeline-left {
+            order: 1 !important;
+            text-align: right !important;
+            padding-right: 40px !important;
+        }
+        .timeline-item.force-left .timeline-right {
+            order: 2 !important;
+            padding-left: 40px !important;
+        }
+
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 15px;
+        }
+
+        .tech-tag {
+            background: #f3f3f3;
+            color: #1a75ff;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            border: 1.5px solid #9c01fc;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            .timeline-item {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .timeline-item::before {
+                left: 20px;
+            }
+
+            .timeline-icon {
+                left: 20px;
+            }
+
+            .timeline-left,
+            .timeline-right {
+                text-align: left !important;
+                padding-left: 60px !important;
+                padding-right: 0 !important;
+            }
+
+            .timeline-item:nth-child(even) .timeline-left {
+                order: 1;
+            }
+
+            .timeline-item:nth-child(even) .timeline-right {
+                order: 2;
+            }
+
+            .tech-grid {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                gap: 15px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .btn {
+                text-align: center;
+            }
+        }
+    </style>
+</section>
+        <!-- Career Journey Section -->
+        <div class="container" style=" padding: 40px;" id="career-journey">
+		<div class="text-center">
+        <section class="Journey">
+            <h2 class="section-title">Career Journey</h2>
+            <p class="section-subtitle"> </p>A timeline of the experiences across education, research, fellowships, and leadership roles that shaped my path in data science and behavioral research.</p>
+            <div class="timeline">
+                <!-- 2025 - Graduation -->
+                <div class="timeline-item force-left">
+                    <div class="timeline-icon">
+                        <img src="img/utaustin_logo.PNG" alt="UT Austin">
+                    </div>
+                    <!-- <div class="timeline-date-outside">Aug 2021 – May 2025</div> -->
+                    <div class="timeline-right"></div>
+                    <div class="timeline-left">
+                        <div class="timeline-content">
+                            <div class="timeline-role">B.S. Behavioral and Social Data Science</div>
+                            <div class="timeline-org">The University of Texas at Austin</div>
+                            <div class="timeline-date">Aug 2021 – May 2025</div>
+                            <div class="timeline-description">
+                                Interdisciplinary coursework in psychology, data science, statistics, and machine learning.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">R</span>
+                                <span class="tech-tag">Jupyter</span>
+                                <span class="tech-tag">Git</span>
+                                <span class="tech-tag">GitHub</span>
+                                <span class="tech-tag">Statistics</span>
+                                <span class="tech-tag">Data Science</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">NLP / Text Analysis</span>
+                                <span class="tech-tag">Behavioral Science</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2024 - MLDS Co-President -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="img/mlds_logo.PNG" alt="MLDS Club">
+                    </div>
+                    <!-- <div class="timeline-date-outside">May 2024 – May 2025</div> -->
+                    <div class="timeline-left">
+                        <div class="timeline-content">
+                            <div class="timeline-role">Co-President (Prev. Technical Officer)</div>
+                            <div class="timeline-org">Machine Learning & Data Science Club</div>
+                            <div class="timeline-date">May 2024 – May 2025</div>
+                            <div class="timeline-description">
+                                Led workshops for 1000+ attendees at UT HackTX. Grew meeting attendance and social media presence by 33% through strategic outreach and partnerships. Coordinated annual DataHack competition.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Leadership</span>
+                                <span class="tech-tag">Mentorship</span>
+                                <span class="tech-tag">Public Speaking</span>
+                                <span class="tech-tag">Event Planning</span>
+                                <span class="tech-tag">Community Building</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-right"></div>
+                </div>
+
+                <!-- 2024 - MIT Fellowship -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="img/mit_logo.png" alt="MIT">
+                    </div>
+                    <!-- <div class="timeline-date-outside">Jun 2024 – Aug 2024</div> -->
+                    <div class="timeline-left">
+                        <div class="timeline-content">
+                            <div class="timeline-role">Data Science & Machine Learning Fellow</div>
+                            <div class="timeline-org">Massachusetts Institute of Technology</div>
+                            <div class="timeline-date">Jun 2024 – Aug 2024</div>
+                            <div class="timeline-description">
+                                Completed a 12‑week fellowship exploring machine learning and AI fundamentals through seminars and hands‑on case studies, working on projects involving unstructured data, regression, classification, recommendation systems, and predictive analytics.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Case Studies</span>
+                                <span class="tech-tag">EDA</span>
+                                <span class="tech-tag">Clustering</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-right"></div>
+                </div>
+
+                <!-- 2023 - Curley Lab -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="img/lab_logo.png" alt="UT Austin">
+                    </div>
+                    <!-- <div class="timeline-date-outside">May 2023 – Dec 2023</div> -->
+                    <div class="timeline-left">
+                        <div class="timeline-content">
+                            <div class="timeline-role">Data Science Intern</div>
+                            <div class="timeline-org">UT Curley Lab - Social Behavior & Neuroscience</div>
+                            <div class="timeline-date">May 2023 – Dec 2023</div>
+                            <div class="timeline-description"> 
+                                <!-- Labeled body parts and analyzed 150+ DeepLabCut‑labeled frames from mice videos, then worked with the retrieved DLC movement‑tracking data to quantify dyadic movement distances and identify social behavior patterns. Used Excel, R, and Python to clean and analyze the data, optimizing processing with custom filtering techniques. Presented research paper sections for the lab reading group, enhancing my scientific communication skills. -->
+                            <ul>
+                                <li>Labeled body parts and analyzed 150+ DeepLabCut‑annotated frames from mice videos, then used DLC movement‑tracking data to quantify dyadic distances and identify social behavior patterns.</li>
+                                <li>Cleaned, filtered, and analyzed behavioral datasets, improving processing efficiency through custom data‑filtering techniques.</li>
+                                <li>Presented research paper sections during lab reading groups, strengthening scientific communication and collaborative discussion skills.</li>
+                            </ul>
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Research</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Excel</span>
+                                <span class="tech-tag">R</span>
+                                <span class="tech-tag">Computer Vision</span>
+                                <span class="tech-tag">DeepLabCut</span>
+                                <span class="tech-tag">Data Analysis</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-right"></div>
+                </div>
+
+                <!-- 2023 - MLT Fellowship -->
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="img/mlt_logo.png" alt="MLT">
+                    </div>
+                    <!-- <div class="timeline-date-outside">Jan 2023 – May 2025</div> -->
+                    <div class="timeline-left">
+                        <div class="timeline-content">
+                            <div class="timeline-role">Career Preparation Technology Fellow</div>
+                            <div class="timeline-org">Management Leadership for Tomorrow</div>
+                            <div class="timeline-date">Jan 2023 – May 2025</div>
+                            <div class="timeline-description">
+                                Selected as 1 of 1,000 high-achieving applicants for professional & leadership development program. Attended conferences and completed technical assignments to enhance analytical skills.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Professional Development</span>
+                                <span class="tech-tag">Leadership</span>
+                                <span class="tech-tag">Networking</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-right"></div>
+                </div>
+                <!-- 2022 - GET PHIT Bootcamp -->
+                <div class="timeline-item force-right"></div> 
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <img src="img/uthealthhouston_logo.PNG" alt="UT Health">
+                    </div>
+                    <!-- <div class="timeline-date-outside">June 2022 – Aug 2022</div> -->
+                    <div class="timeline-right"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-role">Public Health Informatics Participant</div>
+                            <div class="timeline-org">UT Health Science Center Houston</div>
+                            <div class="timeline-date">Jun 2022 - Aug 2022</div>
+                            <div class="timeline-description">
+                                Analyzed Texas HHS COVID-19 hospitalization data using Excel, R, and Tableau. Identified rural healthcare access challenges and key demographic patterns.
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Excel</span>
+                                <span class="tech-tag">R</span>
+                                <span class="tech-tag">Tableau</span>
+                                <span class="tech-tag">Data Visualization</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-right"></div>
+                </div>
+
+                <!-- 2021 - Laredo College -->
+                <div class="timeline-item force-left">
+                    <div class="timeline-icon">
+                        <img src="img/lc_logo.PNG" alt="Laredo College">
+                    </div>
+                    <!-- <div class="timeline-date-outside">Aug 2017 – May 2021</div> -->
+                    <div class="timeline-right"></div>
+                    <div class="timeline-left">
+                        <div class="timeline-content">
+                            <div class="timeline-role">A.A. General Studies</div>
+                            <div class="timeline-org">Laredo College</div>
+                            <div class="timeline-date">Aug 2017 – May 2021</div>
+                            <div class="timeline-description">
+                                Graduated Summa Cum Laude and earned Phi Theta Kappa Honor Society membership through the dual enrollment Early College Program. 
+                            </div>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Dual Enrollment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        		</div>
 			</section>
 		</div>
 	</div>
+    <style>
+    /* Projects Section */
+        .btn-primary {
+            background: linear-gradient(135deg, #1a75ff, #8d06e0);
+            border: none;
+            color: white;
+            font-weight: 600;
+            padding: 8px 18px;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #a64c00, #ff8a26);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(191, 87, 0, 0.3);
+    }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #1a75ff, #9c01fc #bf5700);
+    }
+    </style>
 	<div class="container" style="padding: 40px;" id="projects">
 		<div class="text-center">
 			<h1>Projects</h1>
@@ -203,7 +696,11 @@
 		  </div>
 		 </div>
 	    </div>
-	<div class="container" style=" padding: 40px;" id="contact">
+			</h3>
+		</div>
+	</div>
+            </div>
+    <div class="container" style=" padding: 40px;" id="contact">
 		<div class="text-center">
 			<h1>Contact Me</h1>
 			<p>If you have any questions or would simply like to get in contact, <br>
@@ -212,8 +709,7 @@
 				<a href="https://www.linkedin.com/in/wgero/"><i class="fab fa-linkedin"></i></a>
 				<a href="https://github.com/waze98"><i class="fab fa-github"></i></a>
 			</h3>
-		</div>
-	</div>
+    </div>
 </body>
 
 </html>
